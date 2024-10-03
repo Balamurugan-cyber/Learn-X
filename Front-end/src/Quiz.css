@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.quiz-wrapper {
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.header-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.header-left h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Quiz Container Styles */
+.quiz-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 0 auto;
+}
+
+.quiz-container:hover {
+    transform: scale(1.02);
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #007BFF;
+    transition: width 0.4s ease;
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Options Styles */
+.options {
+    margin-bottom: 30px;
+}
+
+.option {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e7f3fe;
+    border-color: #a1c4fd;
+    /* Consistent color with the theme */
+}
+
+.option label {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    transform: scale(1.5);
+    /* Larger size for better visibility */
+    margin-right: 15px;
+    accent-color: #007BFF;
+    /* Custom color for radio buttons */
+}
+
+/* Timer Styles */
+.timer {
+    font-size: 20px;
+    color: #ff4757;
+    /* Strong color for visibility */
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 30px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(135deg, #007BFF 0%, #0056d4 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056d4 0%, #00358d 100%);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Score Display */
+.score-display {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+
+footer p {
+    font-style: italic;
+}
+
+/* Result Container Styles */
+.result-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+
+.result-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.result-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}

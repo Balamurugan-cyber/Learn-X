@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-container,
+.quiz-container{
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+.header-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header-left h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.home-link-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.home-link-button:hover {
+  background-color: #45a049;
+}
+
+.progress-tracker-container {
+  background: #ffffff;
+  /* White background for contrast */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.progress-section {
+  margin-bottom: 30px;
+  /* Space between sections */
+  text-align: center;
+}
+
+.progress-bar2 {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 30px;
+  margin: 20px 0;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress2 {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  font-size: 18px;
+  color: #555;
+}
+
+.progress-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.progress-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+h3 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.attempts-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  /* Space before attempts */
+}
+
+.attempts-list li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
