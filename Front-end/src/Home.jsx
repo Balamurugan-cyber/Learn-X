@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Home() {
+function home() {
   return (
     <div className="home-container">
       <h1>Welcome to Learn-X</h1>
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default home;
